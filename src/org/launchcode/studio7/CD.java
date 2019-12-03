@@ -12,6 +12,12 @@ public class CD extends BaseDisc {
         super(MAX_CAPACITY);
     }
 
+    public void play() {
+        for(int i = 1; i <= MAX_CAPACITY - getRemainingCapacity(); i++) {
+            System.out.println(this.read(i));
+        }
+    }
+
     @Override
     public void spinDisc() {
         System.out.println("A CD spins at a rate of 200 - 500 rpm.");

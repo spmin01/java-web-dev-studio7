@@ -25,5 +25,7 @@ public class Main {
         album.read(1);
         album.read(2);
         album.read(3);
+
+        album.play();
     }
 }
